@@ -1,0 +1,15 @@
+/* Rules */
+
+.bg-teal {
+    background: teal;
+    border: 1px solid teal;
+}
+.border-teal:hover {
+    border: 1px solid teal;
+    color: black;
+}
+/* Main */
+.top-nav-collapse {
+  background-color: rgba(0, 0, 0, 0.42);
+
+}

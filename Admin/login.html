@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <!-- App styles -->
+        <link rel="stylesheet" href="css/app.min.css">
+    </head>
+    <body data-ma-theme="teal">
+        <div class="login">
+            <!-- Login -->
+            <div class="login__block active" id="l-login">
+                <div class="login__block__header">
+                    <i class="zmdi zmdi-account-circle"></i>
+                    Hi there! Please Sign in as company
+                    <div class="actions actions--inverse login__block__actions">
+                        <div class="dropdown">
+                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert actions__item"></i>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-register" href="">Create an account</a>
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-forget-password" href="">Forgot password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="loginCompany">
+                    <div class="login__block__body">
+                        <div class="form-group form-group--float form-group--centered">
+                            <input type="text" class="form-control" name="company_email">
+                            <label>Email Address</label>
+                            <i class="form-group__bar"></i>
+                        </div>
+                        <div class="form-group form-group--float form-group--centered">
+                            <input type="password" class="form-control" name="company_pass">
+                            <label>Password</label>
+                            <i class="form-group__bar"></i>
+                        </div>
+                        <a href="../Admin/index.html">
+                            <button class="btn btn--icon login__block__btn">
+                            <i class="zmdi zmdi-long-arrow-right"></i></button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <!-- Register -->
+            <div class="login__block" id="l-register">
+                <div class="login__block__header palette-Blue bg">
+                    <i class="zmdi zmdi-account-circle"></i>
+                    Create an account
+                    <div class="actions actions--inverse login__block__actions">
+                        <div class="dropdown">
+                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert actions__item"></i>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-login" href="">Already have an account?</a>
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-forget-password" href="">Forgot password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="companyReg">
+                    <div class="login__block__body">
+                        <div class="form-group form-group--float form-group--centered">
+                            <input type="text" class="form-control" name="company_name">
+                            <label>Company name</label>
+                            <i class="form-group__bar"></i>
+                        </div>
+                        <div class="form-group form-group--float form-group--centered">
+                            <input type="text" class="form-control" name="company_email">
+                            <label>Email Address</label>
+                            <i class="form-group__bar"></i>
+                        </div>
+                        <div class="form-group form-group--float form-group--centered">
+                            <input type="password" class="form-control" name="company_pass">
+                            <label>Password</label>
+                            <i class="form-group__bar"></i>
+                        </div>
+                        <div class="form-group">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">Accept the license agreement</span>
+                            </label>
+                        </div>
+                        <a href="index.html">
+                            <button class="btn btn--icon login__block__btn" ><i class="zmdi zmdi-check"></i></button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <!-- Forgot Password -->
+            <div class="login__block" id="l-forget-password">
+                <div class="login__block__header palette-Purple bg">
+                    <i class="zmdi zmdi-account-circle"></i>
+                    Forgot Password?
+                    <div class="actions actions--inverse login__block__actions">
+                        <div class="dropdown">
+                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert actions__item"></i>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-login" href="">Already have an account?</a>
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-register" href="">Create an account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login__block__body">
+                    <p class="mt-4">Lorem ipsum dolor fringilla enim feugiat commodo sed ac lacus.</p>
+                    <div class="form-group form-group--float form-group--centered">
+                        <input type="text" class="form-control">
+                        <label>Email Address</label>
+                        <i class="form-group__bar"></i>
+                    </div>
+                    <button href="index.html" class="btn btn--icon login__block__btn"><i class="zmdi zmdi-check"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Javascript -->
+        <!-- Vendors -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- App functions and actions -->
+        <script src="js/app.min.js"></script>
+        <script src="../js/log.js"></script>
+    </body>
+</html>

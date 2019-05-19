@@ -1,0 +1,121 @@
+/Registration
+
+var form = new FormData();
+form.append("email", "test@gmail.com");
+form.append("password", "test");
+form.append("company_name", "test");
+form.append("contact_name", "test");
+form.append("contact_phone", "123456");
+form.append("country", "arm");
+form.append("address", "esimur");
+
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://0.0.0.0:8000/auth/register/",
+    "method": "POST",
+    "headers": {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "cache-control": "no-cache"
+    },
+    "processData": false,
+    "contentType": false,
+    "mimeType": "multipart/form-data",
+    "data": form
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+
+
+// Token
+
+var form = new FormData();
+form.append("email", "test@gmail.com");
+form.append("password", "test");
+
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://0.0.0.0:8000/auth/token/",
+    "method": "POST",
+    "headers": {
+        "cache-control": "no-cache"
+    },
+    "processData": false,
+    "contentType": false,
+    "mimeType": "multipart/form-data",
+    "data": form
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+
+
+//Stt
+
+var form = new FormData();
+form.append("file", "/Users/isahaksahakyan/Downloads/exampleaudio");
+
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://127.0.0.1:8000/qa/stt/",
+    "method": "POST",
+    "headers": {
+        "cache-control": "no-cache"
+    },
+    "processData": false,
+    "contentType": false,
+    "mimeType": "multipart/form-data",
+    "data": form
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+
+// Tts
+
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://127.0.0.1:8000/qa/tts/?text=hello",
+    "method": "GET",
+    "headers": {
+        "cache-control": "no-cache"
+    }
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});
+
+
+// Add subscriber
+
+
+var form = new FormData();
+form.append("email", "testsub@mail.com");
+form.append("name", "Anun Azganun");
+
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "http://127.0.0.1:8000/qa/add_subscriber/",
+    "method": "POST",
+    "headers": {
+        "Authorization": "Bearer 3IKKxjRYutKnCkYyNfiHVtw3HCkZgf",
+        "cache-control": "no-cache"
+    },
+    "processData": false,
+    "contentType": false,
+    "mimeType": "multipart/form-data",
+    "data": form
+}
+
+$.ajax(settings).done(function (response) {
+    console.log(response);
+});

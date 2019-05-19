@@ -1,0 +1,18 @@
+/* Header */
+
+html, body, header, #intro {
+    height: 100%;
+}
+#intro {
+    background: url("../img/img_14.jpg")no-repeat center/cover fixed;
+}
+.image {
+    height: 235px;
+    width: 100%;
+}
+.top-nav-collapse {
+  background-color: rgba(0, 0, 0, 0.88);
+}
+footer {
+    margin-top: 30px;
+}

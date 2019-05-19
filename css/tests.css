@@ -1,0 +1,46 @@
+a,button,  { outline: 0; }
+button { cursor: pointer; }
+.top-nav-collapse {
+  background-color: rgba(0, 0, 0, 0.42);
+}
+/* rules */
+a.btn, .btn { padding: 0 20px; height: 45px; line-height: 45px; background: rgba(0, 0, 0, 0.1); color: #fff; border: 0; border-radius: 3px; margin-top: 10px}
+.btn:hover { background: teal; color: white }
+.left { float: left; }
+.right { float: right; }
+.white { background: rgba(0, 0, 0, 0.39) !important; box-shadow: 0 1px 4px rgba(0,0,0,.065); }
+.btn[disabled] { background: #ccc; cursor: default; }
+.clear { clear: both; }
+/* content */
+.container { border-radius: 5px; padding: 5px;}
+.container .quiz { display: none; }
+.container .quiz .status { border-top: 1px solid #ccc; margin-top: 20px; padding-top: 30px; overflow: hidden; color: #999; }
+.container .quiz .result > .descr { padding-bottom: 15px; border-bottom: 1px solid #ccc; margin-bottom: 15px; }
+.container .quiz .result .question { margin-bottom: 15px; display: block; padding-bottom: 15px; border-bottom: 1px solid #ccc; }
+.container .quiz .result .question:last-of-type { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+.container .quiz .result .question .answers { margin-bottom: 0; }
+.container .quiz .result .question .answers p { margin-bottom: 0; }
+.container .quiz .result .question .task { margin-top: 15px; }
+.container .question { display: none; }
+.container .question .answers label { display: block; }
+.container .title    { font: 26px/1.4 dejavu-sans; margin-bottom: 15px; }
+.container .descr { margin-bottom: 15px; }
+.container .answers { margin-bottom: 15px; }
+.container .intro .action { }
+.container .intro .action label span  { display: block; font-size: 14px; color: #999; }
+.container .intro .action label input[type=text] { margin-top: 5px; min-width: 253px; }
+/* responsive */
+@media only screen and (max-width: 1280px) {
+    body { min-width: 1024px; }
+    .container { width: 883px; }
+}
+@media only screen and (max-width: 1024px) {
+    body { min-width: 720px; }
+    .container { width: 663px; }
+}
+@media only screen and (max-width: 768px) {
+    body { min-width: 320px; }
+    .container { width: 600px; float: none; }
+}
+    body { min-width: 280px; }
+    .container { width: 100%; padding: 15px; }
